@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Assignment</title>
+    <style>
+        .accordion1{
+            background-color:Blue;
+            color:white;
+            padding:19px;
+            width:100%;
+            text-align:left;
+            border:none;
+            transition:0.6s;
+            cursor:pointer;
+        }
+        .accordion2{
+            background-color: brown;
+            color:white;
+            padding:19px;
+            width: 100%;
+            text-align:left;
+            border: none;
+            transition: 0.6s;
+            cursor: pointer;
+
+        }
+        .accordion3{
+            background-color:green;
+            padding:19px;
+            width:100%;
+            color:white;
+            text-align:left;
+            border:none;
+            transition:0.6s;
+            cursor:pointer;
+        }
+        .active, .accordion1:hover{
+            background-color:lightskyblue;
+        }
+        .active, .accordion3:hover{
+            background-color:darkkhaki;
+        }
+        .active, .accordion2:hover{
+            background-color: lightsalmon;
+        }
+        .panel{
+            padding:0 19px;
+            background-color:white;
+            display:none;
+            overflow:hidden;
+        }
+
+    </style>
+</head>
+<body>
+    <button class="accordion1">Blue Panel</button>
+    <div class="panel">
+        <p>This is Blue Panel Class Paragraph</p>
+    </div>  
+    <button class="accordion2">Brown Panel</button>
+    <div class="panel">
+        <p>This is Brown Panel Class Paragraph</p>
+    </div>
+    <button class="accordion3">Green Panel</button>
+    <div class="panel">
+        <p>This is Green Panel Paragraph</p>
+    </div>
+    <script>
+        var acc1 = document.getElementsByClassName("accordion1");
+        var i;
+        
+    </script>
+</body>
+</html>
