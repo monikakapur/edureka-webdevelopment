@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Assignment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .accordion1{
+            background-color:Blue;
+            color:white;
+            padding:19px;
+            width:100%;
+            text-align:left;
+            border:none;
+            transition:0.6s;
+            cursor:pointer;
+        }
+        .accordion2{
+            background-color: brown;
+            color:white;
+            padding:19px;
+            width: 100%;
+            text-align:left;
+            border: none;
+            transition: 0.6s;
+            cursor: pointer;
+        }
+        .accordion3{
+            background-color:green;
+            padding:19px;
+            width:100%;
+            color:white;
+            text-align:left;
+            border:none;
+            transition:0.6s;
+            cursor:pointer;
+        }
+        .active, .accordion1:hover{
+            background-color:lightskyblue;
+        }
+        .active, .accordion3:hover{
+            background-color:darkkhaki;
+        }
+        .active, .accordion2:hover{
+            background-color: lightsalmon;
+        }
+        .panel{
+            padding:0 19px;
+            background-color:white;
+            display:none;
+            overflow:hidden;
+        }
+        .container-fluid{
+            background-color: #248de4;
+            color:#ffffff !important;
+        }
+        .navbar-inverse .navbar-nav>li>a{
+            color:#ffffff !important;
+        }
+        .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+            background-color: #248de4 !important;
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+             <a class="navbar-brand" href="https://www.edureka.co"><img src="C:\Edureka Programs\Edureka WebDevelopment\6thAssignment\edureka.png" width="160" height="30"></a>  
+            </div>
+            <ul class = "nav navbar-nav">
+                <li class = "active"><a href="https://www.edureka.co">Home</a></li>
+                <li class = "dropdown">
+                    <a class = "dropdown-toggle" data-toggle="dropdown" href="#">Products
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Middleware</a></li>
+                        <li><a href="#">Database</a></li>
+                        <li><a href="#"> Application</a></li>
+                        <li><a href="#"> Servers</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Blog</a></li>
+                <li><a href= "#">About</a></li>
+                <li><a href= "#">Contact Us</a></li>                
+            </ul>
+        </div>
+    </nav>
+    <br><br><br><br><br><br>
+    <button class="accordion1">Blue Panel</button>
+    <div class="panel">
+        <p>This is Blue Panel Class Paragraph. orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>  
+    <button class="accordion2">Brown Panel</button>
+    <div class="panel">
+        <p>This is Brown Panel Class Paragraph. orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <button class="accordion3">Green Panel</button>
+    <div class="panel">
+        <p>This is Green Panel Paragraph. orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <script>
+        var acc1 = document.getElementsByClassName("accordion1");
+        var i;
+        for(i=0; i <acc1.length; i++) {
+            acc1[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            })
+        }
+        </script>
+        <script>
+        var acc2 = document.getElementsByClassName("accordion2");
+        var i ;
+        for (i=0; i < acc2.length; i++) {
+            acc2[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+
+                var panel2 = this.nextElementSibling;
+                if (panel2.style.display === "block") {
+                    panel2.style.display = "none";
+                } else {
+                    panel2.style.display = "block";
+                }
+        })
+    }     
+    </script>
+    <script>
+        var acc3 = document.getElementsByClassName("accordion3");
+        var i;
+        for (i=0; i < acc3.length; i++) {
+            acc3[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+
+                var panel3 = this.nextElementSibling;
+                if (panel3.style.display === "block") {
+                    panel3.style.display = "none";
+                } else {
+                    panel3.style.display = "block";
+                }
+            })
+        }
+    </script><br><br>
+    <a href="https://www.googleplus.com"><i class="fa fa-google-plus fa-3x"></i></a>
+<a href="https://www.facebook.com"><i class="fa fa-facebook fa-3x"></i></a>
+<a href="https://www.linkedin.com"><i class="fa fa-linkedin fa-3x"></i></a>
+</body>
+</html>
