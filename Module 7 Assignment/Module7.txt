@@ -1,1 +1,5 @@
+Module 7:
+Twitter Bootstrap 3 Project
+www.edureka.co/complete-web-developer
+Assignment Develop the complete edureka website that is built in this module
 
